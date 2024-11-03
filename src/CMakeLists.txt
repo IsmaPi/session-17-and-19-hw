@@ -1,0 +1,9 @@
+add_library(zipfs_functions STATIC zipfs.h)
+
+
+add_executable(main_zipfs_containers main_zipfs_containers.cpp)
+add_executable(main_zipfs_algorithms main_zipfs_algorithms.cpp)
+
+
+target_link_libraries(main_zipfs_containers zipfs_functions)
+target_link_libraries(main_zipfs_algorithms zipfs_functions)
